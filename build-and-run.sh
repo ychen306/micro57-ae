@@ -17,7 +17,7 @@ LLVM_PATH=$(abspath $1)
 
 ./build-pssa.sh $LLVM_PATH $2
 
-PSSA_PATH=$(abspath pssa)
+PSSA_PATH=$(abspath pssa/build)
 
-./run-poly.sh $LLVM_PATH $PSSA_PATH
-./run-tsvc.sh $LLVM_PATH $PSSA_PATH
+./run-poly.sh $PSSA_PATH $LLVM_PATH
+./run-tsvc.sh $PSSA_PATH $LLVM_PATH
