@@ -1,4 +1,5 @@
-#!/usr/bin/env bash -e
+#!/usr/bin/env bash
+set -e
 
 if ! (echo 'int main() {return 0;}' | $1/bin/clang -x c - -o /dev/null)
 then

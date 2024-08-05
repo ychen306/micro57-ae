@@ -1,4 +1,5 @@
-#!/usr/bin/env bash -e
+#!/usr/bin/env bash
+set -e
 
 # Set this to how many times you want to repeat the runs
 REPS=3
