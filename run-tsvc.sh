@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env bash -e
 
 PSSA_PATH=$1
 LLVM_PATH=$2
