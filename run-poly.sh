@@ -62,11 +62,11 @@ echo 'CFLAGS=-O3 -ffast-math -march=native -DPOLYBENCH_TIME -DPOLYBENCH_USE_REST
     >> pb-ours-nover-restrict/config.mk
 echo "CC=$OUR_CLANG" >> pb-ours-nover-restrict/config.mk
 
-python run-polybench.py $REPS pb-scalar pb.scalar.txt
-python run-polybench.py $REPS pb-clang pb.clang.txt
-python run-polybench.py $REPS pb-ours pb.ours.txt
-python run-polybench.py $REPS pb-ours-nover pb.ours-nover.txt
+python3 run-polybench.py $REPS pb-scalar pb.scalar.txt
+python3 run-polybench.py $REPS pb-clang pb.clang.txt
+python3 run-polybench.py $REPS pb-ours pb.ours.txt
+python3 run-polybench.py $REPS pb-ours-nover pb.ours-nover.txt
 
-python run-polybench.py $REPS pb-clang-restrict pb.clang-restrict.txt
-python run-polybench.py $REPS pb-ours-restrict pb.ours-restrict.txt
-python run-polybench.py $REPS pb-ours-nover-restrict pb.ours-nover-restrict.txt
+python3 run-polybench.py $REPS pb-clang-restrict pb.clang-restrict.txt
+python3 run-polybench.py $REPS pb-ours-restrict pb.ours-restrict.txt
+python3 run-polybench.py $REPS pb-ours-nover-restrict pb.ours-nover-restrict.txt
