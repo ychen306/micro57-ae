@@ -16,7 +16,7 @@ abspath() {
 LLVM_PATH=$(abspath $1)
 
 JOBS=$2
-if ! [[ $2 =~ '^[0-9]+$' ]] 
+if ! [[ $2 =~ ^[0-9]+$ ]]
 then
     JOBS=4
 fi
