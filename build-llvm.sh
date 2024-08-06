@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -x
+set -e
 
 curl -L https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-15.0.6.tar.gz -o llvm.tar.gz
 
@@ -22,4 +22,4 @@ cmake -DCMAKE_BUILD_TYPE=Release\
   -DLLVM_ENABLE_PROJECTS='clang'\
   -DLLVM_ENABLE_TERMINFO=OFF\
   ../llvm
-make -j$CORES
+make -j$JOBS
