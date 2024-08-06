@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -x
 
-#curl -L https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-15.0.6.tar.gz -o llvm.tar.gz
+curl -L https://github.com/llvm/llvm-project/archive/refs/tags/llvmorg-15.0.6.tar.gz -o llvm.tar.gz
 
 JOBS=$1
 if ! [[ $1 =~ ^[0-9]+$ ]]
